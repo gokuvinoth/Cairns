@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+/* force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background-color: #f5ce90;
+  font-family: "Muli", sans-serif;
+}
+
+/* ---- grid ---- */
+.title {
+  color: #494856;
+  text-indent: 42.999%;
+}
+.grid {
+  background: #f5ce90;
+}
+
+/* clear fix */
+.grid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+
+.grid-item {
+  float: left;
+  background-color: #494856;
+  color: #fff;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+  border: 2px solid #d66824;
+  animation: brdrClr 5s infinite;
+}
+
+.grid-item img:hover {
+  opacity: 1;
+}
+.grid-item p {
+  max-width: 75%;
+  text-align: center;
+  border-left: 4px grey;
+  border-left-style: ridge;
+}
+
+.grid-item h3,
+h4 {
+  color: #fff;
+  font-family: "Muli", sans-serif;
+  text-indent: 42.999%;
+}
+
+.grid-item i {
+  color: grey;
+  font-kerning: none;
+  font-weight: 200;
+  animation: fntClr 3s infinite;
+}
+.grid-item i::first-letter {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.blog-content {
+  background-color: #fff;
+  flex: 3;
+  padding: 30px 30px 50px;
+  position: relative;
+}
+
+.blog-text {
+  height: 100%;
+}
+
+.blog-text::first-letter {
+  font-size: 250%;
+  font-weight: bold;
+}
+
+.blog-text p {
+  color: #494856;
+  line-height: 28px;
+  margin: 0 0 20px;
+}
+
+@keyframes brdrClr {
+  50% {
+    border-color: lightblue;
+  }
+}
+@keyframes fntClr {
+  50% {
+    color: #fff;
+  }
+}
+
+.float {
+  position: fixed;
+  width: 2em;
+  height: 2em;
+  bottom: 1.5em;
+  right: 2em;
+  color: #f5ce90;
+  background-color: #494856;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.float1 {
+  position: fixed;
+  width: 2em;
+  height: 2em;
+  top: 1.5em;
+  left: 2em;
+  color: #f5ce90;
+  background-color: #494856;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+}
+.my-float1 {
+  margin-top: 0.5em;
+}
+
+.my-float {
+  margin-top: 0.5em;
+}
