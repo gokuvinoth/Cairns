@@ -15,7 +15,7 @@ body {
 /* ---- grid ---- */
 .title {
   color: #494856;
-  text-indent: 42.999%;
+  text-indent: 3em;
 }
 .grid {
   background: #f5ce90;
@@ -29,12 +29,22 @@ body {
 }
 
 /* ---- .grid-item ---- */
-
 .grid-sizer,
 .grid-item {
-  width: 33.333%;
+  width: 25%;
 }
-
+@media screen and (max-width: 992px) {
+  .grid-sizer,
+  .grid-item {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .grid-sizer,
+  .grid-item {
+    width: 100%;
+  }
+}
 .grid-item {
   float: left;
   background-color: #494856;
@@ -44,7 +54,7 @@ body {
 .grid-item img {
   display: block;
   max-width: 100%;
-  border: 2px solid #d66824;
+  border: 0.3em solid #d66824;
   animation: brdrClr 5s infinite;
 }
 
@@ -54,7 +64,7 @@ body {
 .grid-item p {
   max-width: 75%;
   text-align: center;
-  border-left: 4px grey;
+  border-left: 0.6em grey;
   border-left-style: ridge;
 }
 
@@ -94,8 +104,9 @@ h4 {
 
 .blog-text p {
   color: #494856;
-  line-height: 28px;
+  line-height: 0.9em;
   margin: 0 0 20px;
+  font-size: 0.8em;
 }
 
 @keyframes brdrClr {
