@@ -6999,8 +6999,7 @@ const tripExportData = {
   "timeZone" : "Australia\/Brisbane",
   "creationOSVersion" : "14.4",
   "userActivity" : {
-    "activi
-tyName" : "Walking",
+    "activityName" : "Walking",
     "stepCount" : 2435
   },
   "location" : {
