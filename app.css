@@ -31,7 +31,7 @@ body {
 /* ---- .grid-item ---- */
 .grid-sizer,
 .grid-item {
-  width: 25%;
+  width: 33.333%;
 }
 @media screen and (max-width: 992px) {
   .grid-sizer,
